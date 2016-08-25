@@ -2,7 +2,7 @@ var map;
 var marker;
 var markers = [];
 var infowindow;
-var image = url('https://jimyah.github.io/Vue-food-map/images/map-icon.png');
+var image = 'https://jimyah.github.io/Vue-food-map/images/map-icon.png';
 
 function initMap() {
 
