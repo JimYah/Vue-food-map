@@ -1,0 +1,268 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0;padding: 0;border: 0;font-weight:normal;background: transparent;}
+body{line-height: 1.5;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{display: block;}
+ol, ul, dl, dt, dd{list-style: none;}
+blockquote, q{quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+button,input {cursor: pointer; overflow: visible;}
+button,input,optgroup,select,textarea{color:inherit; font: inherit; margin: 0;}
+optgroup{font-weight: bold;}
+[type="checkbox"],[type="radio"]{box-sizing: border-box; padding: 0;}
+svg:not(:root){overflow: hidden;}
+input,button,select,textarea{outline:none}
+ *:focus{outline: none;}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+html,body{width: 100%;height: 100%;min-width: 320px;}
+html{font-family: Helvetica,arial,Microsoft JhengHei,"微軟正黑體",sans-serif;font-size: 16px;}
+body{font-size:1rem;background-color: #f7f7f7;-webkit-text-size-adjust: none;}
+hr{display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1rem 0;padding: 0;}
+.clear{clear: both;}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*- - food-app - -*/
+
+#food-app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  box-sizing: border-box;
+  background-image: url(../images/banner1.jpeg);
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+}
+
+/*- - title - -*/
+
+.title {
+  width: 97%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #fff;
+  text-align: center;
+  text-shadow: 0 5px 10px #000;
+}
+
+.title h1 {
+  font-size: 65px;
+}
+
+.title p {
+  font-size: 20px;
+}
+
+/*- - form - -*/
+
+form {
+  color: #000;
+  margin: 50px 0;
+}
+
+.form-style {
+  width: 350px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: rgba(130, 130, 130,0.8);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.8);
+  border: 5px solid #fff;
+  overflow: auto;
+}
+
+.select-style {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.select-style select {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.select-style:after {
+  position: absolute;
+  color: #fff;
+  font-family: "Fontawesome";
+  font-size: 40px;
+  content: '\f0d7';
+  vertical-align: middle;
+  top: -3px;
+  right: 15px;
+  pointer-events: none;
+}
+
+/*- - content-wrap - -*/
+
+.content-wrap {
+  width: 1400px;
+  margin: 0 auto 60px auto;
+  padding: 0 40px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+/*- - content - -*/
+
+.content {
+  float: left;
+  width: 600px;
+  height: 500px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.content ul {
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.content ul li {
+  float: left;
+  width: 49.5%;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  box-sizing: border-box;
+  background-color: rgba(130, 130, 130,0.8);
+  cursor: pointer;
+}
+
+.content ul li:hover {
+  background-color: rgba(130, 130, 130,1);
+}
+
+.content ul li:nth-child(even) {
+  margin-left: 1%;
+}
+
+.content ul li h4 {
+  height: 50px;
+}
+
+.content ul li img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+.content ul li .desc {
+  height: 100px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.add {
+  height: 50px;
+}
+
+/*- - map-wrap - -*/
+
+.map-wrap {
+  float: right;
+  width: 700px;
+  height: 500px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.mapInfo {
+  color: #000;
+}
+
+
+/*- - footer - -*/
+
+.footer {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 999;
+  color: #fff;
+  background-color: rgba(130, 130, 130,1);
+  overflow: auto;
+}
+
+
+@media only screen and (max-width: 750px) {
+
+  .content {
+    float: none;
+    width: 650px;
+    height: 500px;
+    overflow: auto;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+  }
+
+  .map-wrap {
+    float: none;
+    width: 650px;
+    height: 500px;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+
+  form {
+    color: #000;
+    width: 750px;
+    margin: 50px auto;
+  }
+
+  .title {
+    width: 750px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border-bottom: 5px solid #fff;
+    text-align: center;
+    text-shadow: 0 5px 10px #000;
+  }
+
+}
